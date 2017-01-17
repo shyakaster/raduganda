@@ -1,0 +1,19 @@
+/*
+Page title style
+*/
+
+.page-title{
+    padding-top: 250px;
+    padding-bottom: 100px;
+    background: url('../images/bg4.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+    h1{
+        font-family: $title-font;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0px;
+        font-weight: 400;
+    }
+}

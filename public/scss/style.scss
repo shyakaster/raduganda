@@ -1,0 +1,72 @@
+
+/* 
+    Author     : Design_mylife
+    File       : Assan charity template
+    version    : v1.0
+*/
+
+/**google font**/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800';
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,600,700,800';
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_base.scss";
+@import "_buttons.scss";
+@import "_titles.scss";
+@import "_header.scss";
+@import "_dropdowns.scss";
+@import "_sliders.scss";
+@import "_icon-boxes.scss";
+@import "_img-boxes.scss";
+@import "_counters.scss";
+@import "_causes.scss";
+@import "_stories.scss";
+@import "_parallax.scss";
+@import "_cta.scss";
+@import "_page-title.scss";
+@import "_paginations.scss";
+@import "_sidebar.scss";
+@import "_events.scss";
+@import "_volunteer.scss";
+@import "_footer.scss";
+
+
+.contact-info{
+    p{
+        font-size: 18px;
+        i{
+            margin-right: 10px;
+        }
+    }
+}
+
+/**responsive style for template**/
+@media(max-width:768px){
+    .navbar-nav {
+    margin:0px -15px;
+    background-color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+    color: rgba(0, 0, 0, 0.8);
+    &:hover{
+        color: rgba(0, 0, 0, 1);
+    }
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: rgba(0, 0, 0, 1);
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle,.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    border-color: $skincolor;
+    background: $skincolor;
+}
+.owl-arrows-slider .owl-controls .owl-next {
+    right: 0;
+}
+.owl-arrows-slider .owl-controls .owl-prev {
+    left: 0;
+}
+}

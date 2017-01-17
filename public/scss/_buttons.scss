@@ -1,0 +1,36 @@
+/*
+Buttons style
+*/
+.btn{
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: capitalize;
+    border: 0px;
+    @include border-radius(2px);
+    padding: 8px 14px;
+}
+
+.btn-lg{
+    padding: 14px 30px;
+}
+.btn-theme-bg{
+    background: $skincolor;
+    color: #fff;
+    @include box-shadow(0 2px 5px 0 rgba(0, 0, 0, 0.25));
+    &:hover{
+        background: #333;
+        color: #fff;
+    }
+    &:focus{
+         background: $skincolor;
+    color: #fff;
+    }
+}
+.btn-white-bg{
+    background: #fff;
+    color: #333;
+    &:hover{
+        background: #333;
+        color: #fff;
+    }
+}

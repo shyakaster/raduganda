@@ -1,0 +1,20 @@
+/*
+Counters style
+*/
+
+.counter{
+    padding: 90px 0;
+    padding-bottom: 60px;
+    background-color:$skincolor;
+    i{
+        font-size: 40px;
+        line-height: 40px;
+        color: #fff;
+    }
+    h1{
+        margin-top: 20px;
+    }
+    span{
+        color: #fff;
+    }
+}

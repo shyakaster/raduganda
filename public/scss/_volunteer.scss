@@ -1,0 +1,23 @@
+/*
+Volunteers
+*/
+.volunteer-box{
+    @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0.08));
+    background: #fff;
+    .volunteer-desc{
+        padding: 20px 15px;
+        h4{
+            font-family: $title-font;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+        span{
+            display: block;
+            font-style: italic;
+            font-size: 12px;
+        }
+    }
+    p{
+        margin-bottom: 0px;
+    }
+}

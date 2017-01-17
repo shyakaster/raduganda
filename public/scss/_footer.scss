@@ -1,0 +1,94 @@
+/*footer style*/
+.footer{
+    background: #1e5f6e;
+    padding-top: 50px;
+    color:#fff;
+    h4{
+        position: relative;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        font-family:$title-font;
+        font-weight:600;
+        color:#fff;
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            margin-bottom: -1.5px;
+            background: #fff;
+        }
+    }
+    p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+.latest-news{
+    >li{
+        padding-bottom: 15px;
+    }
+    .post-thumb{
+        margin-right: 15px;
+    }
+    .content{
+        overflow: hidden;
+        a{
+            
+            h5{
+                margin-bottom: 0px; 
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+        span{
+            font-size: 11px;
+            display: inline-block;
+            padding: 3px 0px;
+            padding-bottom: 0px;
+            padding-left: 2px;
+            margin-right:10px; 
+        }
+    }
+}
+.f-contact{
+    padding-top:15px;
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight:300;
+        i{
+            margin-right: 10px;
+        }
+    }
+}
+.text-copyright span{
+    padding: 20px 0;
+    display: block;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 12px;
+}
+.subscribe-form{
+    .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+        .form-control{
+            width: 250px;
+            border: 0px;
+            @include box-shadow(none);
+            @include border-radius(2px);
+        }
+    }
+}
+.f-socials{
+    >li>a{
+        color: #fff;
+        font-size: 20px;
+    }
+}

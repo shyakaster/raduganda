@@ -1,0 +1,85 @@
+/**gallery image hover styles**/
+.overlay-box{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-bottom:30px;
+    .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 20;
+        &:after{
+            position: absolute;
+            content: "";
+            display: inline-block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            background-color: $skincolor;
+            opacity: 0.9;
+            @include transition(all 0.2s ease-in-out);
+        }
+    }
+    .overlay-content {
+        text-align: center;
+        top: 50%;
+        position: relative;
+        left: 0;
+        right: 0;
+        color: #fff;
+        -ms-transform: translateY(-25%);
+        -webkit-transform: translateY(-25%);
+        transform: translateY(-25%);
+        opacity: 0;
+        z-index: 99;
+        padding: 0 30px;
+        @include transition(all .32s);
+    }
+    img{
+        -webkit-transform: translateX(-4%) scale(1.08);
+        transform: translateX(-4%) scale(1.08);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        @include transition(all .32s);
+        -webkit-opacity: 1;
+        z-index: 10;
+        position: relative;
+        width: 100%;
+        zoom: 1;
+    }
+    &:hover {
+        .overlay {
+            visibility: visible;
+            opacity: 1;
+        }
+        .overlay-content {
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            opacity: 1;
+        }
+        img {
+            -webkit-transform: translateX(4%) scale(1.08);
+            transform: translateX(4%) scale(1.08);
+        }
+    }
+    h4{
+        color: #fff;
+        font-family: $title-font;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+}
+.full-width{
+    .overlay-box{
+        margin-bottom: 0px;
+    }
+}

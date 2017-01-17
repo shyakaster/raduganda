@@ -1,0 +1,39 @@
+/*
+Slider styless
+*/
+.fullwidthbanner{
+    width:100%;
+    position: relative;
+}
+.slider-title{
+    font-family: $title-font;
+    font-weight: 800;
+}
+/*owl slider*/
+.owl-arrows-slider{
+    .item{
+        padding: 0px 15px;
+        margin-bottom: 0px;
+    }
+    .owl-controls{
+       position: absolute;
+       left: 0;
+       top: 50%;
+       width: 100%;
+       .owl-next{
+           position: absolute;
+           right: -50px;
+       }
+       .owl-prev{
+           position: absolute;
+           left: -50px;
+       }
+       .owl-buttons div{
+           border-radius: 0px;
+           background: transparent;
+           color: $skincolor;
+           font-size: 40px;
+           padding: 0px;
+       }
+    }
+}
