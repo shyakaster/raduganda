@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'contacts/new'
+
+  get 'contacts/create'
+
+  get 'projects/index'
+
+ get 'about/index', to: 'about#index', as: 'aboutus'
+
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
