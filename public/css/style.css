@@ -371,7 +371,8 @@ Page and heading titles
 }
 .navbar-brand img {
   position: absolute;
-  margin-top: -5px;
+  margin-top: -250px;
+  margin-left: -250px;
 }
 .navbar-brand img.logo-scroll {
   opacity: 0;
