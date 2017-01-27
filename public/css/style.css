@@ -709,7 +709,7 @@ Counters style
 .counter {
   padding: 90px 0;
   padding-bottom: 60px;
-  background-color: #42b8d4;
+  background-color: #660000;
 }
 .counter i {
   font-size: 40px;
@@ -1228,7 +1228,7 @@ Volunteers
 
 /*footer style*/
 .footer {
-  background: #1e5f6e;
+  background: #660000;
   padding-top: 50px;
   color: #fff;
 }
