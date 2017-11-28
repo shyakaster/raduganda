@@ -22,8 +22,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+<<<<<<< HEAD
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'bootstrap-sass',          '3.3.7'
+=======
+
+>>>>>>> 4ba5d7c48d7c4df7cd42c3bf70d426ce4dc05fc1
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
