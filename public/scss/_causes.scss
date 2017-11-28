@@ -1,0 +1,117 @@
+/*
+Causes styles
+*/
+.causes-box{
+    @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0.08));
+    @include transition(all 0.3s);
+    @include border-radius(5px);
+    overflow: hidden;
+    position: relative;
+    margin: 15px 0;
+    &:hover{
+        @include box-shadow(0px 0px 15px 0px rgba(0, 0, 0, 0.28)); 
+    }
+}
+.causes-thumb{
+    position: relative;
+}
+.image-badge{
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    display: inline-block;
+    padding: 6px 20px;
+    color: #fff;
+    text-transform: capitalize;
+    background: $skincolor;
+}
+.causes-desc{
+    padding:15px;
+    background-color:#fff;
+    h4{
+        margin-bottom: 15px;
+        a{
+            color: #222;
+            text-transform: capitalize;
+            &:hover{
+                color:  $skincolor;
+            }
+        }
+    }
+}
+.causes-amount{
+    span{
+        font-family: $title-font;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    h1{
+        font-family: $primary-font;
+        font-size: 20px;
+        color: #222;
+    }
+}
+/**causes list**/
+.causes-list-box{
+    margin-bottom: 30px;
+    background: #fff;
+    @include box-shadow(0 0 15px rgba(0,0,0,0.2));
+    @include border-radius(6px);
+    overflow:hidden;
+    .causes-desc{
+        padding-top:20px;
+        h4{
+            font-family: $title-font;
+            font-size: 15px;
+            font-weight: 700;
+            a{
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+    .progress{
+        height:7px;
+        line-height:7px;
+        @include border-radius(0px);
+        @include box-shadow(none);
+        margin-bottom:5px;
+        .progress-bar{
+            background: $skincolor;
+            &.progress-bar-striped{
+                background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+                background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+                background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+                -webkit-background-size: 40px 40px;
+                background-size: 40px 40px;
+                @include box-shadow(none);
+            }
+        }
+    }
+
+/*causes detail box*/
+.causes-single-box{
+    background-color:#fff;
+    @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0.08));
+    img.main-thumb{
+        width: 100%;
+    }
+    .single-box-desc{
+        padding: 20px 15px;
+    }
+    ul{
+        margin: 0;
+        padding:0;
+    }
+    .raised-amount{
+        background: #fefefe;
+        padding: 20px 15px;
+        border-top:1px solid #eee;
+        border-bottom:1px solid #eee;
+        margin:20px -15px;
+        h1{
+            margin-bottom: 0px;
+        }
+    }
+}

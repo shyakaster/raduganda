@@ -1,0 +1,26 @@
+/*
+Page and heading titles
+*/
+.center-title{
+    padding-bottom: 50px;
+    h3{
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        color: $skincolor;
+        position: relative;
+        font-weight: 600;
+        font-family:$title-font;
+        &:after{
+            content: "";
+            width: 120px;
+            height: 3px;
+            background: $skincolor;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            margin-left: -60px;
+            
+        }
+    }
+}
+

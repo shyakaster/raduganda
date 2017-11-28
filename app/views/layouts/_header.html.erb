@@ -1,0 +1,52 @@
+<!-- Preloader -->
+  <div class="preloader">
+    <div class="pulse"></div>
+  </div>
+  <!-- Preloader End -->
+        <header class="header-v1">
+            <div class="top-bar">
+                <div class="container">
+                    <div class="pull-left">
+                        <ul class="list-inline social-icons">
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">
+                        <ul class="list-inline">
+                            <li><a href="/contacts/new">Donate Now</a></li>
+                            <li><a href="/contacts/new">Become a volunteer</a></li>
+                            <li><a href="#">+256 77 2627627</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Static navbar -->
+                     <nav class="navbar navbar-default navbar-sticky navbar-static-top yamm">
+                         <div class="container">
+                             <div class="navbar-header">
+                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                     <span class="sr-only">Toggle navigation</span>
+                                     <span class="icon-bar"></span>
+                                     <span class="icon-bar"></span>
+                                     <span class="icon-bar"></span>
+                                 </button>
+                                 <a class="navbar-brand" href="/">
+                                      <img src="images/logo1.png" alt="Logo" class="logo-default">
+                                     <!-- <img src="images/logo1.png" alt="Logo" class="logo-scroll">  -->
+
+                                 </a>
+                             </div>
+                             <div id="navbar" class="navbar-collapse collapse">
+                                 <ul class="nav navbar-nav navbar-right">
+                                     <li><%= link_to "Home", root_path, role:'button'%></li>
+                                     <li><%= link_to "About", aboutus_path, role:'button' %></li>
+                                     <li><%= link_to "Contact", new_contact_path, role:'button'%></li>
+
+                             </div><!--/.nav-collapse -->
+                         </div><!--/.container-fluid -->
+                     </nav>
+        </header>

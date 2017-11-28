@@ -1,0 +1,24 @@
+<%= form_for @contact, class:'charity-contact' do |f|%>
+  <div class="form-group">
+    <%= f.label :name%>
+    <%= f.text_field :name, required: true,class:'form-control', placeholder:'Full Name....'%>
+  </div>
+   <div class="form-group">
+    <%= f.label :email%>
+    <%= f.email_field :email, required: true,class:'form-control', placeholder:'Email Address....'%>
+  </div>
+   <div class="form-group">
+    <%= f.label :message%>
+    <%= f.text_area :message, required: true,class:'form-control', placeholder:'Message....'%>
+  </div>
+  <div class="hidden">
+    <%= f.label :nickname%>
+    <%= f.text_field :nickname, hint: 'leave this blank'%>
+  </div>
+   <div>
+      <div class="data-status"></div> <!-- data submit status -->
+    </div>
+     <div class="text-right">
+        <%= f.submit 'Submit',name:'submit', class: 'btn btn-theme-bg btn-lg' %>
+     </div>
+<%end%>

@@ -1,0 +1,33 @@
+/*
+Paginations
+*/
+
+
+.pagination{
+    margin-bottom: 0px;
+    >li{
+            display: inline-block;
+            >a,>span{
+               width: 32px;
+               height: 32px;
+                   padding: 5px 0px;
+               text-align: center;
+               border-radius: 50%;
+               display: block;
+               box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+    }
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover,.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    border-color: $skincolor;
+    color: #fff;
+    background: $skincolor;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span{
+        border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.pagination>li:last-child>a, .pagination>li:last-child>span{
+        border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}

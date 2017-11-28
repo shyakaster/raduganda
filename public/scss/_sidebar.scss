@@ -1,0 +1,99 @@
+/*
+Sidebar widget
+*/
+.sidebar-widget{
+    padding: 20px 15px;
+    @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0.08));
+    background: #fff;
+    @include border-radius(4px);
+    margin-bottom:30px;
+    h4{
+        font-family: $title-font;
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #eee;
+    }
+    form{
+        position: relative;
+        button[type="submit"]{
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            background: transparent;
+        }
+        .form-control{
+            border: 0px;
+            box-shadow: none;
+        }
+    }
+    .list-unstyled{
+        margin:0px;
+        padding:0px;
+        >li{
+            >a{
+              text-transform: capitalize;
+              display: block;
+              padding: 5px 0;
+              border-bottom: 1px solid #eee;
+              position:relative;
+              &:hover{
+                  color: $skincolor;
+              }
+              &:before{
+                     content: "\f101";
+                     font-family: 'FontAwesome';
+                     margin-right: 10px;
+              }
+            }
+            &:last-child a{
+                border-bottom: 0px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+    .latest-news .content{
+        a h5{
+            color: #333;
+            &:hover{
+                color: $skincolor;
+            }
+        }
+    }
+    .latest-news li:last-child{
+        padding-bottom: 0px;
+    }
+    &.search-widget{
+        padding: 5px 15px;
+    }
+}
+.tags{
+    margin:0;
+    padding:0;
+    &:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    li{
+        padding: 0;
+        display: block;
+        float: left;
+    }
+    a{
+        display: block;
+        float: left;
+        border: 1px solid #eee;
+        padding: 2px 8px;
+        margin:2px;
+        font-size: 13px;
+        &:hover{
+            color: $skincolor;
+            border-color: $skincolor;
+        }
+    }
+}
+
+

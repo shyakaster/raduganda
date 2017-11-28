@@ -1,0 +1,68 @@
+/*
+Event list
+*/
+.event-list{  
+    >li{
+        background: #fff;
+        @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0.08));
+        padding: 20px 15px;
+        margin-bottom:20px;
+        padding-bottom:10px;
+        &:last-child{
+            border-bottom: 0px;
+        }
+    }
+}
+.event-date{
+    display: block;
+    margin-bottom: 5px;
+    float: left;
+    margin-right: 20px;
+    padding: 8px;
+    color: #fff;
+    width: 60px;
+    text-align: center;
+    background-color:$skincolor;
+    .date{
+        font-size: 34px;
+        line-height: 34px;
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+    .month, .year {
+        text-transform: uppercase;
+        display: block;
+        line-height: 16px;
+    }
+}
+.event-list-content{
+    overflow: hidden;
+    h4{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        text-transform: capitalize;
+    }
+    .event-time,.event-location{
+        color: #999;
+        display: inline-block;
+        line-height: 16px;
+    }
+    .event-time{
+        margin-right: 5px;
+        padding-right: 5px;
+        border-right: 1px solid #ddd;
+    }
+}
+.event-grid-item{
+    margin-bottom: 30px;
+}
+.event-grid-desc{
+    background: #fff;
+    @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0.08));
+    padding: 20px 15px;
+    .event-time{
+        border-right: 0px;
+    }
+}
